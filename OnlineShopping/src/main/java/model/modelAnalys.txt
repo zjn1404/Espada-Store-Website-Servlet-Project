@@ -1,0 +1,67 @@
+- Product
+	+ productId
+	+ price
+	+ color
+	+ material
+	+ size
+	+ gender
+	+ productType
+	+ subType
+	
+- Type
+	+ typeId
+	+ typeName: top, bottom, accessory
+	
+- SubType
+	+ typeId
+	+ subTypeId
+	+ subTypeName: tee, shirt, jacket, hoodie, pants, shorts, skirt, headwear, bag
+	
+- Clothe
+	+ form
+	
+- Top
+- Tee
+- Shirt
+- Jacket
+- Hoodie
+
+- Bottom
+- Pants
+- Shorts
+- Skirts
+
+- Accessory
+- Bag
+- Headwear
+
+- Customer
+	+ customerId
+	+ name
+	+ gender
+	+ address
+	+ deliveryAddress
+	+ dob
+	+ phoneNumber
+	+ email
+	+ registerToGetMail
+	
+- Order
+	+ orderId
+	+ customer
+	+ orderAddress
+	+ deliveryAddress
+	+ state: verifying, processing, shipping, shipped, returned
+	+ payment
+	+ paymentState
+	+ paid
+	+ unpaid
+	+ orderingDate
+	+ shippingDate
+	
+- OrderDetail
+	+ orderId
+	+ productId
+	+ orderAmount
+	+ VAT
+
